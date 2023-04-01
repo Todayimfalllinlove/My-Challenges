@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --clr-1: hsl(225, 100%, 98%);
+    --clr-2: hsl(225, 100%, 94%);
+    --clr-3: hsl(224, 23%, 55%);
+    --clr-4: hsl(245, 75%, 52%);
+    --clr-5: hsl(223, 47%, 23%);
+}
+  
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Red Hat Display", sans-serif;
+}
+  
+html{
+    font-size: 62%;
+}
+  
+body {
+    display: grid;
+    background: var(--clr-2) url(../images/pattern-background-desktop.svg)
+      no-repeat top;
+    background-size: 100% calc(100vh - 50%);
+    color: var(--clr-3);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    min-height: 100vh;
+    place-items: center;
+}
+
+main {
+    width: min(100%, 45rem);
+    margin: 2rem;
+    padding: 1.5rem;
+}
+  
+.card {
+    background-color: #fff;
+    height: 630px;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 1px 15px 25px rgba(0, 0, 0, 0.07);
+}
+  
+.header {
+    height: 20rem;
+}
+  
+.header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    padding-bottom: 1.5rem;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--clr-5);
+}
+
+h4 {
+    color: var(--clr-5);
+}
+  
+.content {
+    padding: 3rem;
+    text-align: center;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--clr-1);
+    padding: 2rem;
+    margin: 2.5rem 0 3rem;
+    border-radius: 2rem;
+}
+  
+.details .box {
+    display: flex;
+}
+  
+.details .img {
+    width: 5rem;
+    height: 5rem;
+}
+  
+.details .info {
+    margin-left: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.details .name {
+    font-size: 1.6;
+    margin-bottom: 2px;
+    font-weight: 700;
+}
+  
+.details .price {
+    font-size: 1.6rem;
+}
+  
+.details .tap {
+    font-size: 1.5rem;
+    color: var(--clr-4);
+    font-weight: bold;
+}
+  
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.buttons .btn {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    background-color: var(--clr-4);
+    color: var(--clr-1);
+    padding: 1.3rem;
+    border-radius: 1rem;
+}
+  
+.buttons .btn-payment {
+    box-shadow: 0 1.2rem 2rem hsl(245, 75%, 90%);
+}
+  
+.buttons .btn-cancel {
+    width: max-content;
+    font-weight: bold;
+    padding: 0;
+    margin-top: 2rem;
+    background: none;
+    color: var(--clr-3);
+}
+
+/* Hover  */
+.details .tap:hover {
+    text-decoration: none;
+}
+  
+.buttons .btn-payment:hover {
+    filter: opacity(80%);
+}
+  
+.buttons .btn-cancel:hover {
+    color: var(--clr-5);
+}
+  
+@media screen and (max-width: 375px) {
+  body {
+      background: var(--clr-2) url(../images/pattern-background-mobile.svg)
+        no-repeat top;
+      background-size: cover;
+  }
+  
+    .card-content {
+      padding: 3rem 2rem;
+  }
+  
+    .card-header {
+      height: 17rem;
+  }
+}
