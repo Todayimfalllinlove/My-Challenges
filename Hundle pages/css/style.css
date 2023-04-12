@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+h1
+{
+    font-family: "Poppins";
+}
+p{
+    font-family: "Open Sans";
+}
+.nav img{
+    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    width: 250px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    
+}
+.content .left{
+    margin-left: 3rem;
+}
+.content .left img{
+    width: 750px;
+}
+.content .right{
+    margin-left: 4rem;
+}
+.content .right h1{
+    margin-top: 2rem;
+    font-size: 40px;
+    color: #fff;
+    
+}
+.content .right p{
+    color: #fff;
+    margin-top: 1rem;
+    line-height: 25px;
+}
+.content .right button{
+    margin-top: 1rem;
+    width: 170px;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    font-family: "Poppins";
+    font-size: 15px;
+    color: hsl(257, 40%, 49%);
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.footer{
+    color: #fff;
+    letter-spacing: 7px;
+    margin-left: 84rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-size: 30px;
+    cursor: pointer;
+}
+/* Hover */
+.content .right button:hover{
+    background: hsl(300, 69%, 71%);
+    color: #fff;
+}
+.footer .fa-facebook:hover{
+    color: hsl(300, 86%, 66%);
+}
+.footer .fa-square-twitter:hover{
+    color: hsl(300, 86%, 66%);
+}
+.footer .fa-instagram:hover{
+    color: hsl(300, 86%, 66%);
+}
+
+
